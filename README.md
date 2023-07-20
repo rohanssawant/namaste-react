@@ -1,11 +1,5 @@
 ## Namaste React Course by Akshay Saini
 
-# _Chapter 01 - Inception_
+## All chapters are divided into different branches.
 
-### Agenda:
-
-- Started with `Hello World` program.
-  - Used `HTML`.
-  - Used `DOM`.
-  - Used `CDN React` using `React.createElement`.
-- Created a Git Repo.
+### For eg. _Chapter 01 - Inception_ has branch `Ch1: Inception`
