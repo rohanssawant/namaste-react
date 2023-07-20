@@ -1,14 +1,10 @@
 ## Namaste React Course by Akshay Saini
 
-# _Chapter 02 - Igniting Our App_
+# _Chapter 03 - Laying the Foundation_
 
 ### Agenda:
 
-- Build our own `create-react-app` from scratch using `ParcelJs`.
-
-### Code:
-
-- Initialize `npm`.
-- Remove `react` CDN links.
-- Install `react`, `react-dom` & `parcel` from npm.
-- Add `start` & `build` scripts for `parcel`.
+- `JSX`.
+- React.createElement vs JSx
+- Benefits & BTS of JSX
+- Intro to Components

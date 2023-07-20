@@ -1,18 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// Create nested React Elements
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is Namaste React"),
-    React.createElement("h2", {}, "by Akshay Saini"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I'm an h1 tag"),
-    React.createElement("h2", {}, "I'm an h2 tag"),
-  ]),
-]);
 
+const jsxHeading = <h1>Namaste React using JSX.</h1>;
+const Title = () => {
+  return (
+    <h1 className="head" tabIndex="5">
+      Namaste React
+    </h1>
+  );
+};
+
+const Heading = () => {
+  return (
+    <div>
+      <Title />
+      <h2>Namaste React Functional Component</h2>
+    </div>
+  );
+};
 // create root using createRoot
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // passing react element inside root
-root.render(parent);
+root.render(<Heading />);
