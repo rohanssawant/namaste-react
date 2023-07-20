@@ -1,11 +1,14 @@
 ## Namaste React Course by Akshay Saini
 
-# _Chapter 01 - Inception_
+# _Chapter 02 - Igniting Our App_
 
 ### Agenda:
 
-- Started with `Hello World` program.
-  - Used `HTML`.
-  - Used `DOM`.
-  - Used `CDN React` using `React.createElement`.
-- Created a Git Repo.
+- Build our own `create-react-app` from scratch using `ParcelJs`.
+
+### Code:
+
+- Initialize `npm`.
+- Remove `react` CDN links.
+- Install `react`, `react-dom` & `parcel` from npm.
+- Add `start` & `build` scripts for `parcel`.
