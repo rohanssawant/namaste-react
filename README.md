@@ -1,10 +1,20 @@
 ## Namaste React Course by Akshay Saini
 
-# _Chapter 03 - Laying the Foundation_
+# _Chapter 04 - Talk is Cheap, show me the code_
 
 ### Agenda:
 
-- `JSX`.
-- React.createElement vs JSx
-- Benefits & BTS of JSX
-- Intro to Components
+- Build Swiggy like web-app.
+
+#### Component Structure
+
+- Header
+  - Logo
+  - Navbar
+- Body
+  - Search Bar
+  - Restaurant Container
+    - Restaurant Card
+- Footer
+  - Copyright
+  - Links
