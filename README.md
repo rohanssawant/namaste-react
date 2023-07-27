@@ -15,6 +15,8 @@
   - Search Bar
   - Restaurant Container
     - Restaurant Card
+      - Img
+      - Name of rest, star rating, cuisines, delivery time etc
 - Footer
   - Copyright
   - Links
