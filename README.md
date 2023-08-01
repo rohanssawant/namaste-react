@@ -26,3 +26,5 @@
 - 01:59:00 – React Fiber Architecture (GitHub)
 - 02:06:00 – Array Destructuring
 - 02:08:00 – Session Recap
+
+- React Algo: https://github.com/acdlite/react-fiber-architecture
