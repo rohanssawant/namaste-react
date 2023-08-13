@@ -1,38 +1,35 @@
 ## Namaste React Course by Akshay Saini
 
-# _Episode 06 – Exploring the World_
+# _Episode 07 – Finding the path_
 
 ### Timestamps:
 
-02:00 – Monolith Architecture
-05:00 – Microservices
-07:00 – Separation of concerns
-09:00 – UI Microservice
-17:50 – Explanation with diagram
-22:00 – useEffect()
-31:00 – fetch(), Promise
-32:00 – Inspect element, Swiggy Website
-33:00 – React JS syntax, newer approach to handle fetch()
-35:00 – CORS Policy
-36:00 – CORS Chrome Extension
-45:00 – Live Data API
-47:00 – Delete MockData.js file
-48:00 – Optional Chaining with an example
-50:40 – Spinning Loader
-52:40 – Shimmer UI
-56:00 – Shimmer Component Code
-58:30 – CSS Code for the Shimmer Component
-01:04:00 – Conditional Rendering
-01:06:00 – using Ternary Operator
-01:07:10 – Why do we need state variables? (useState)
-01:16:10 – useState() usage & explanation
-01:23:00 – Super Power of React
-01:29:00 – Reconciliation & Diff Algorithm Explained
-01:31:00 – Toggle the login & logout button
-01:39:00 – Build a Search Functionality
-01:46:00 – OnChange handler
-01:55:00 – Nice explanation of re-rendering
-01:57:00 – DOM Manipulation & Virtual DOM
-02:02:00 – Search functionality enhanced using toLowerCase() method
+03:00 – useEffect hook explanation, Dependency Array
+15:40 – React Router
+19:00 – Create Routing Configuration
+22:00 – Create About Component
+30:00 – Rafce
+33:00 – error (404 not found)
+37:00 – useRouteError Hook
+41:55 – Error.js
+44:20 – Children Routes
+51:00 – Outlet Keyword
+56:00 – Create links to Header Menu
+58:18 – Link Component
+01:00:00 – Observe the performance
+01:03:55 – Single Page Applications (SPA)
+01:05:35 – 2 types of Routing: Client Side Routing & Server-side Routing
+01:08:00 – Session Recap till now
+01:11:50 – Dynamic Routing
+01:13:35 – JSON Viewer
+01:40:30 – GraphQL Introduction
+01:52:40 – Dynamic Data coding
+01:57:50 – Map function and its usage with a key
+01:59:00 – Changing Restaurant ID’s
+02:00:00 – New SuperPower Hook: UseParams
+02:02:30 – Move API to constants.js
+02:04:00 - Dynamic Cards- to be clickable
+02:08:00 – Link Component
+02:13:00 – Session Recap
 
 - React Algo: https://github.com/acdlite/react-fiber-architecture
