@@ -1,14 +1,9 @@
 import CDN_IMG_URL from "../utils/common";
 
 const RestaurantCard = ({ resData }) => {
-  const {
-    cloudinaryImageId,
-    name,
-    avgRating,
-    cuisines,
-    costForTwo,
-    deliveryTime,
-  } = resData?.data;
+  const { cloudinaryImageId, name, avgRating, cuisines, costForTwo } =
+    resData?.info;
+  const { deliveryTime } = resData?.info?.sla;
   return (
     <div className="res-card">
       <img
@@ -20,7 +15,7 @@ const RestaurantCard = ({ resData }) => {
       <h4>{cuisines.join(", ")}</h4>
       <h4>{avgRating} stars</h4>
       <h4>Time for delivery: {deliveryTime} minutes</h4>
-      <h4>₹{costForTwo / 100} FOR TWO</h4>
+      <h4>{costForTwo}</h4>
     </div>
   );
 };

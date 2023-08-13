@@ -19,12 +19,15 @@
   margin: 10px;
 }
 
-.res-card {
+.res-card,
+.shimmer-card {
   width: 200px;
+  height: 520px;
   border: 1px solid black;
   padding: 13px;
   background-color: "gray";
   margin: 15px;
+  background-color: antiquewhite;
 }
 
 .search {
@@ -36,7 +39,8 @@
   width: 100%;
 }
 
-.res-container {
+.res-container,
+.shimmer-container {
   display: flex;
   flex-wrap: wrap;
 }
