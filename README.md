@@ -4,7 +4,7 @@
 
 ### Timestamps:
 
-03:00 – useEffect hook explanation, Dependency Array
+03:00 – useEffect,useState hook explanation, Dependency Array
 15:40 – React Router
 19:00 – Create Routing Configuration
 22:00 – Create About Component
@@ -33,3 +33,25 @@
 02:13:00 – Session Recap
 
 - React Algo: https://github.com/acdlite/react-fiber-architecture
+
+#### `useEffect()`
+
+```
+useEffect(()=>{},[])
+
+useEffect(callback, dependencyArray)
+```
+
+- Default behav is to be called after every render.
+
+- Page loads -> Component loads -> useEff is called
+
+- If no dependencyArray, useEffect is called after every render.
+
+- If dependencyArray is empty, useEffect gets called ONLY on initial render.
+
+- If dependencyArray is present, useEff is called everytime that dependency is updated.
+
+###### Never create `state` variables inside functions, conditionals statements, loops. Only inside func components on highest level.
+
+### `react-router-dom`

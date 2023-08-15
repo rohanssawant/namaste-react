@@ -7,3 +7,6 @@ export const API_URL =
 const CDN_IMG_URL =
   "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 export default CDN_IMG_URL;
+
+export const MENU_URL =
+  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.014238846337&lng=73.11294313520193&restaurantId=";

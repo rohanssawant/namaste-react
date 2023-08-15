@@ -30,6 +30,11 @@
   background-color: antiquewhite;
 }
 
+.res-card:hover {
+  cursor: pointer;
+  border: 5px solid grey;
+}
+
 .search {
   padding: 10px;
 }
@@ -47,4 +52,14 @@
 
 .filter-btn {
   margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: cadetblue;
+  cursor: pointer;
 }
