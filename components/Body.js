@@ -12,11 +12,23 @@ const Body = () => {
   const fetchData = async () => {
     const data = await fetch(API_URL);
     const jsonData = await data.json();
+    let restaurants;
+    const { cards } = jsonData?.data;
 
-    const restaurants =
-      jsonData?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants;
-    console.log(`restaurants: ${restaurants}`);
+    // Iterating through whole cards array to find restaurants
+    for (let i = 0; i < cards.length; i++) {
+      if (
+        cards[i]?.card?.card?.gridElements?.infoWithStyle &&
+        cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      ) {
+        console.log(`Found rest in ${i}th place`);
+        restaurants =
+          cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+        break;
+      }
+    }
+
+    console.log(`restaurants: ${JSON.stringify(restaurants)}`);
     setListOfRestaurant(restaurants);
     setFilteredListOfData(restaurants);
   };
@@ -24,8 +36,9 @@ const Body = () => {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(listOfRestaurants);
+
   if (listOfRestaurants.length === 0) return <Shimmer />;
+
   return (
     <div className="body">
       <div className="filter">
