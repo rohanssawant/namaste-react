@@ -1,6 +1,6 @@
 ## Namaste React Course by Akshay Saini
 
-# _Episode 08 – Getting Classy_
+# _Episode 09 – Optimising our App_
 
 ### React component lifecycle diagram:
 
@@ -8,47 +8,26 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 ### Timestamps:
 
-09:30 – Class based component example
-16:00 – Props, Props in Function based component, Destructure
-18:00 – How to write same example in a Class based component
-21:00 – Mentioned about “Super(props)”
-23:00 – What if you want more props?
-26:00 – How can we write local/state variables in a Function Component
-28:00 – how can we create state/local variable in Class component
-30:00 – “this.state” explained, Destructuring
-34:00 – How do we create 2 state/local variables in both functional & class-based component
-37:05 – How to update the state variables in Class component
-48:20 – Life cycle of Class based components
-50:00 – Detailed Explanation
-Parent, child – Constructor
-Parent, child – Render
-58:25 – ComponentDidMount(){ }, Life cycle of a Parent-child relationship
-01:05:00 -ComponentDidMount() used for API calss
-01:07:00 – API calls inside useEffect()
-01:14:00 – this.props.name + “child constructor”
-01:20:00 – React Lifecycle Methods Diagram
-01:21:00 – Why React is so fast?
-01:27:00 – DOM Manipulation
-01:29:00 – Render phase, Commit phase
-01:33:00 – How to make API calls in class based components?
-01:36:00 – GitHub API call
-01:38:40 – How to update the json data into our web page
-01:43:38 – Coding UserClass.js component
-01:44:00 – How life cycle works here in this code
-01:45:00 - Debugger
-01:49:30 – ComponentDidUpdate()
-01:52:00 – Mounting Cycle
-01:55:00 – API rate limit exceeded
-01:56:15 – Unmounting Phase/cycle
-01:58:00 - in older days we were coding like this
-02:09:00 – How to write the same in class based component – ProfileClass.js
-02:15:00 – More Deeper we explore the old way of writing React Code
-02:18:00 – what is the use case of componentWillUnmount()?
-02:24:30 – Problem of Single Page Application
-02:30:00 – Senior Developer should know this
-02:32:00 – What will happen if we create setInterval inside useEffect
-02:36:30 – coding Profile.js
-02:45:30 – Async in useEffect()
+02:00 – Custom Hooks, Single Responsibility Principle
+04:25 – Modularity
+09:23 – Hook
+20:00 – Create custom Hook – useRestaurantMenu
+21:00 – write useEffect(), fetch(), How to optimize the code using custom hook?
+32:00 – Make a custom Hook & put as packages (examples)
+34:00 – A Hook to tell the user in Online or Offline
+36:30 -Under utils folder create useOnlineStatus.js
+47:07 – coding useOnlineStatus.js
+48:00 – usage of dev console on browser, Making the network offline
+50:42- How to build green dot & red dot to identify online or offline (Reusability feature of React)
+54:45 – Should we write “use” in a hook? Is it mandatory?
+58:45 – How to further optimize the code?
+01:03:00 – MakeMyTrip website
+01:06:00 – Make smaller modules, code-splitting, chunking, Dynamic Bundling, Lazy Loading
+01:17:30 – Lazy Loading
+01:25:25 – Suspense keyword
+Till 01:33:00 discussed how to optimize the code
+01:35:00 – Implementing Lazy Loading to other web pages
+01:36:00 – Interview Tips
 
 - React Algo: https://github.com/acdlite/react-fiber-architecture
 
