@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { API_URL } from "../utils/common";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
+import Error from "./Error";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurant] = useState([]);
@@ -14,7 +16,7 @@ const Body = () => {
     const jsonData = await data.json();
     let restaurants;
     const { cards } = jsonData?.data;
-
+    console.log(`fetch data called`);
     // Iterating through whole cards array to find restaurants
     for (let i = 0; i < cards.length; i++) {
       if (
@@ -28,7 +30,7 @@ const Body = () => {
       }
     }
 
-    console.log(`restaurants: ${JSON.stringify(restaurants)}`);
+    // console.log(`restaurants: ${JSON.stringify(restaurants)}`);
     setListOfRestaurant(restaurants);
     setFilteredListOfData(restaurants);
   };
@@ -37,7 +39,15 @@ const Body = () => {
     fetchData();
   }, []);
 
-  if (listOfRestaurants.length === 0) return <Shimmer />;
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false)
+    return <Error msg={"Looks like you're offline!"} />;
+
+  if (listOfRestaurants.length === 0) {
+    console.log(`body w shimmer`);
+    return <Shimmer />;
+  }
 
   return (
     <div className="body">
