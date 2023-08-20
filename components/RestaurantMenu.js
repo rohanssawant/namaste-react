@@ -16,25 +16,6 @@ const RestaurantMenu = () => {
   const { name, cloudinaryImageId, cuisines, costForTwoMessage } =
     resInfo?.cards[0]?.card?.card?.info;
 
-  //   const { itemCards } =
-  //     resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
-
-  //   return (
-  //     <div className="menu">
-  //       <h1>{name}</h1>
-  //       <h2>{cuisines.join(", ")}</h2>
-  //       <ul>
-  //         {itemCards.map((item) => {
-  //           return (
-  //             <li>
-  //               {item.card.info.name} - {`Rs.${item.card.info.price / 100}`}
-  //             </li>
-  //           );
-  //         })}
-  //       </ul>
-  //     </div>
-  //   );
-
   const { cards } = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR;
   console.log(cards.length);
   cards.shift();

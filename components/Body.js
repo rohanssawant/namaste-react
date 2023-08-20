@@ -46,7 +46,15 @@ const Body = () => {
 
   if (listOfRestaurants.length === 0) {
     console.log(`body w shimmer`);
-    return <Shimmer />;
+    return (
+      <div className="res-container grid grid-cols-4 gap-[2%] p-[2%]">
+        {Array(10)
+          .fill("")
+          .map((e, i) => {
+            return <Shimmer key={i} />;
+          })}
+      </div>
+    );
   }
 
   return (
