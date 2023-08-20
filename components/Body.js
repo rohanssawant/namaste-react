@@ -52,16 +52,18 @@ const Body = () => {
   return (
     <div className="body">
       <div className="filter">
-        <div className="search">
+        <div className="search flex justify-evenly w-[70%] mx-auto">
           <input
+            className="placeholder:italic placeholder:text-slate-400 block bg-white w-[40%] border border-slate-700 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-zinc-600 focus:ring-zinc-600 focus:ring-1 sm:text-sm"
             type="text"
+            placeholder="Search Restaurant"
             value={searchTxt}
             onChange={(e) => {
               setSearchTxt(e.target.value);
             }}
           ></input>
           <button
-            className="search-btn"
+            className="search-btn border bg-slate-600 text-white border-zinc-600 px-10 rounded-full hover:text-slate-600 hover:bg-white"
             onClick={() => {
               const filteredRest = listOfRestaurants.filter((r) => {
                 return r.info?.name
@@ -74,19 +76,21 @@ const Body = () => {
             Search
           </button>
         </div>
-        <button
-          className="filter-btn"
-          onClick={() => {
-            const filteredList = listOfRestaurants.filter(
-              (res) => res.info.avgRating > 4
-            );
-            setFilteredListOfData(filteredList);
-          }}
-        >
-          Top Rated Restaurants
-        </button>
+        <div className="filter-btn-container flex items-center justify-center m-[2%]">
+          <button
+            className="filter-btn border bg-slate-600 text-white border-zinc-600 px-[5%] py-[0.5%] rounded-full hover:text-slate-600 hover:bg-white"
+            onClick={() => {
+              const filteredList = listOfRestaurants.filter(
+                (res) => res.info.avgRating > 4
+              );
+              setFilteredListOfData(filteredList);
+            }}
+          >
+            Top Rated Restaurants
+          </button>
+        </div>
       </div>
-      <div className="res-container">
+      <div className="res-container grid grid-cols-4 gap-[2%] p-[2%]">
         {filteredListOfData.map((restaurant) => (
           <Link key={restaurant.info.id} to={`/res/${restaurant.info.id}`}>
             <RestaurantCard resData={restaurant} />

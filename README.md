@@ -1,6 +1,6 @@
 ## Namaste React Course by Akshay Saini
 
-# _Episode 09 – Optimising our App_
+# _Episode 10 – Jo Dikhta hai, Wo bikta hai_
 
 ### React component lifecycle diagram:
 
@@ -8,21 +8,22 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 ### Timestamps:
 
-02:00 – Custom Hooks, Single Responsibility Principle
-04:25 – Modularity
-09:23 – Hook
-20:00 – Create custom Hook
-21:00 – write useEffect(), fetch(), How to optimize the code using custom hook?
-32:00 – Make a custom Hook & put as packages (examples)
-34:00 – A Hook to tell the user in Online or Offline
-54:45 – Should we write “use” in a hook? Is it mandatory?
-58:45 – How to further optimize the code?
-01:06:00 – Make smaller modules, code-splitting, chunking, Dynamic Bundling, Lazy Loading
-01:17:30 – Lazy Loading
-01:25:25 – Suspense keyword
-Till 01:33:00 discussed how to optimize the code
-01:35:00 – Implementing Lazy Loading to other web pages
-01:36:00 – Interview Tips
+02:22 – Default way of writing CSS
+03:00 – SCSS and SaSS
+04:40 – New way of writing CSS in a React application (Styled Components)
+06:30 – another way is using libraries & frameworks (Material UI, BootStrap, Chakra UI)
+10:30 – Ant Design
+11:30 – Tailwind CSS
+13:55 – Tailwind CSS website
+16:15 – Installation- Parcel – PostCSS
+18:40 – tailwind.congig.js
+19:35 - configure PostCSS
+23:00 – coding postCSSrc
+26:00 – Delete all CSS files & insert only 3 new lines (Tailwind)
+29:00 – In Tailwind CSS, usage of ‘className’
+38:25 – Tailwind Visual Studio Code extension – Tailwind Intellisense
+43:07 to 01:08:30 - Coding Tailwind CSS examples
+01:10:30 – Pros & cons of Tailwind CSS discussed
 
 - React Algo: https://github.com/acdlite/react-fiber-architecture
 
