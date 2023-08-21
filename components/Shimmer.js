@@ -2,11 +2,11 @@ function Shimmer() {
   return (
     <div
       role="status"
-      className="max-w-sm p-4 border border-gray-200 rounded-lg shadow animate-pulse md:p-6 dark:border-gray-700"
+      className="max-w-sm p-4 border border-gray-200 rounded-lg shadow animate-pulse md:p-6 "
     >
-      <div className="flex items-center justify-center bg-gray-300 rounded dark:bg-gray-700">
+      <div className="flex items-center justify-center bg-gray-300 rounded ">
         <svg
-          className="rounded-t-lg rounded-b-lg h-[200px] w-[200px] text-gray-200 dark:text-gray-600"
+          className="rounded-t-lg rounded-b-lg h-[200px] w-[200px] text-gray-200 "
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -16,11 +16,11 @@ function Shimmer() {
           <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
         </svg>
       </div>
-      <h3 className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></h3>
-      <h4 className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></h4>
-      <h4 className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></h4>
-      <h4 className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></h4>
-      <h4 className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></h4>
+      <h3 className="h-2.5 bg-gray-200 rounded-full  w-48 mb-4"></h3>
+      <h4 className="h-2 bg-gray-200 rounded-full  mb-2.5"></h4>
+      <h4 className="h-2 bg-gray-200 rounded-full  mb-2.5"></h4>
+      <h4 className="h-2 bg-gray-200 rounded-full  mb-2.5"></h4>
+      <h4 className="h-2 bg-gray-200 rounded-full  mb-2.5"></h4>
     </div>
   );
 }
