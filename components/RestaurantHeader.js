@@ -5,7 +5,7 @@ const RestaurantHeader = ({ info }) => {
     info;
   console.log(avgRating);
   return (
-    <div className="header-container flex justify-between items-center">
+    <div className="header-container flex justify-between items-center mb-4">
       <div className="info-container">
         <h1 className="text-2xl">{name}</h1>
         <p className="text-sm">{cuisines.join(", ")}</p>

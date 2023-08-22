@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { API_URL } from "../utils/common";
@@ -11,6 +11,10 @@ const Body = () => {
   const [filteredListOfData, setFilteredListOfData] = useState([]);
   const [searchTxt, setSearchTxt] = useState("");
 
+  // Higer order component
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+  console.log(`RestaurantCardPromoted-----`);
+  console.log(RestaurantCardPromoted);
   const fetchData = async () => {
     const data = await fetch(API_URL);
     const jsonData = await data.json();
@@ -30,7 +34,7 @@ const Body = () => {
       }
     }
 
-    // console.log(`restaurants: ${JSON.stringify(restaurants)}`);
+    console.log(restaurants);
     setListOfRestaurant(restaurants);
     setFilteredListOfData(restaurants);
   };
@@ -101,7 +105,15 @@ const Body = () => {
       <div className="res-container grid grid-cols-4 gap-[2%] p-[2%]">
         {filteredListOfData.map((restaurant) => (
           <Link key={restaurant.info.id} to={`/res/${restaurant.info.id}`}>
-            <RestaurantCard resData={restaurant} />
+            {/* if res is promoted add label card to it */}
+            {restaurant.info.aggregatedDiscountInfoV3?.header ? (
+              <RestaurantCardPromoted
+                resData={restaurant}
+                label={restaurant.info.aggregatedDiscountInfoV3.header}
+              />
+            ) : (
+              <RestaurantCard resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>

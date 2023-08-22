@@ -30,4 +30,18 @@ const RestaurantCard = ({ resData }) => {
   );
 };
 
+export const withPromotedLabel = (RestaurantCard) => {
+  return ({ resData, label }) => {
+    console.log(label);
+    return (
+      <div>
+        <label className="absolute bg-green-600 text-white p-1 rounded-lg">
+          {label}
+        </label>
+        <RestaurantCard resData={resData} />
+      </div>
+    );
+  };
+};
+
 export default RestaurantCard;
