@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { CDN_LOGO_URL } from "../utils/common";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [btnName, setbtnName] = useState("Login");
   const onlineStatus = useOnlineStatus();
+  const { loggedInUser } = useContext(UserContext);
+  console.log(useContext(UserContext));
   return (
     <div className="flex justify-between">
       <div className="logo-container">
@@ -35,6 +38,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="px-4">Cart</li>
+          <li className="px-4">{`Welcome, ${loggedInUser}`}</li>
           <button
             onClick={() => {
               btnName === "Login" ? setbtnName("Logout") : setbtnName("Login");

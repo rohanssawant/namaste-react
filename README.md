@@ -13,6 +13,8 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 - 00:50 – Higher order comp theory & example
 - 23:00 - BUilding accordion
 - 01:45:00 - Lifting state up
+- 02:10:00 - Props drilling
+- 02:15:00 - Context APIs
 
 #### React component lifecycle
 
