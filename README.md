@@ -2,7 +2,7 @@
 
 - React Algo: https://github.com/acdlite/react-fiber-architecture
 
-# _Episode 11 – Data is the new oil_
+# _Episode 12 – Lets build our store_
 
 ### React component lifecycle diagram:
 
@@ -10,11 +10,7 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 ### Timestamps:
 
-- 00:50 – Higher order comp theory & example
-- 23:00 - BUilding accordion
-- 01:45:00 - Lifting state up
-- 02:10:00 - Props drilling
-- 02:15:00 - Context APIs
+-
 
 #### React component lifecycle
 
