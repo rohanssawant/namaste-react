@@ -10,7 +10,9 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 ### Timestamps:
 
--
+- 00:00 – Intro to Redux
+- 10:00 - Redux theory
+- 40:00 - Building cart ( Redux prac )
 
 #### React component lifecycle
 
@@ -64,3 +66,15 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 - HIGHER ORDER COMP
   - A comp which takes a comp & returns a comp. It kind of enhances the comp.
   - Are pure func, should not change anything, we just need to enhance stuff or add something on top of it.
+
+### REDUX TOOL KIT
+
+- When we press btn, it `DISPATCHES ACTION` which calls a `REDUCER FUNCTION` which updates `SLICE OF REDUX STORE`.
+- For reading, there is a concept called `SUBSCRIBING THE STORE` using `SELECTOR`.
+
+- TODO
+  - [ ] Build store
+  - [ ] Connect store to App
+  - [ ] Slice (cart action)
+  - [ ] Dispatch action
+  - [ ] Selector

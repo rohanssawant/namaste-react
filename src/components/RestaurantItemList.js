@@ -11,6 +11,9 @@ const RestaurantItemList = ({ food }) => {
         <p className="food-description text-xs text-gray-500">
           {food.card.info.description}
         </p>
+        <button className="search-btn border bg-green-600 text-white border-zinc-600 px-4 rounded-full hover:text-green-600 hover:bg-white mt-3">
+          Add +
+        </button>
       </div>
       <div className="food-img-container ">
         <img
