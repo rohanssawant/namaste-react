@@ -1,10 +1,24 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 const ContactUs = () => {
   return (
-    <div>
-      <h1>Contact Us</h1>
-      <h2>This is Namaste React.</h2>
+    <div className="">
+      <h1 className="font-bold text-3xl p-4 m-4">Contact Us</h1>
+      <form>
+        <input
+          type="text"
+          placeholder="name"
+          className="border border-black p-2 m-2"
+        />
+        <input
+          type="text"
+          placeholder="message"
+          className="border border-black p-2 m-2"
+        />
+        <button className=" p-2 m-2">Submit</button>
+      </form>
+      <Outlet />
     </div>
   );
 };
@@ -12,15 +26,15 @@ const ContactUs = () => {
 // class ContactUs extends React.Component {
 //   constructor(props) {
 //     super(props);
-//     console.log("Parent contructor");
+//     // console.log("Parent contructor");
 //   }
 
 //   componentDidMount() {
-//     console.log("Parent comp did mount");
+//     // console.log("Parent comp did mount");
 //   }
 
 //   render() {
-//     console.log("Parent render");
+//     // console.log("Parent render");
 //     return (
 //       <div>
 //         <h1>Contact Us</h1>

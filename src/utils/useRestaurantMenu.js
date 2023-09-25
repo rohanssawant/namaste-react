@@ -12,7 +12,7 @@ const useRestaurantMenu = (resId) => {
   };
 
   useEffect(() => {
-    console.log(`fetching data res menu`);
+    // console.log(`fetching data res menu`);
     fetchData();
   }, []);
 

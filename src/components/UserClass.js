@@ -8,23 +8,23 @@ class UserClass extends React.Component {
     this.state = {
       userInfo: { name: "Dummy" },
     };
-    console.log(this.props.name + "Child constructor");
+    // console.log(this.props.name + "Child constructor");
   }
 
   async componentDidMount() {
     const data = await fetch(GITHUB_API + "rohanssawant");
     const jsonData = await data.json();
     this.setState({ userInfo: jsonData });
-    console.log(jsonData);
-    console.log(this.props.name + "Child comp did mount");
+    // console.log(jsonData);
+    // console.log(this.props.name + "Child comp did mount");
 
     // setInterval(() => {
-    //   console.log(`log`);
+    //   // console.log(`log`);
     // }, 2000);
   }
 
   render() {
-    console.log(this.props.name + "Child render");
+    // console.log(this.props.name + "Child render");
     // const { name, location } = this.props;
     const { name, location, avatar_url } = this.state.userInfo;
     return (

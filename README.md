@@ -10,10 +10,6 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 ### Timestamps:
 
-- 00:00 – Intro to Redux
-- 10:00 - Redux theory
-- 40:00 - Building cart ( Redux prac )
-
 #### React component lifecycle
 
 - Single Component
@@ -73,8 +69,23 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 - For reading, there is a concept called `SUBSCRIBING THE STORE` using `SELECTOR`.
 
 - TODO
-  - [ ] Build store
-  - [ ] Connect store to App
-  - [ ] Slice (cart action)
-  - [ ] Dispatch action
-  - [ ] Selector
+  - [x] Build store
+  - [x] Connect store to App
+  - [x] Slice (cart action)
+  - [x] Dispatch action
+  - [x] Selector
+
+### TESTING
+
+###### Unit Testing
+
+- Testing react comp in isolation.
+-
+
+###### Integration Testing
+
+- Developing a flow of actino whcih includes mutiple components talking to each other
+
+###### End to End Testing
+
+- e2e

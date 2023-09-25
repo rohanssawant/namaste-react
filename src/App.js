@@ -11,6 +11,8 @@ import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import store from "./store/store";
 import Cart from "./components/Cart";
+import ErrorContact from "./components/ErrorContact";
+import Person from "./components/Person";
 const Grocery = React.lazy(() => import("./components/Grocery"));
 const About = React.lazy(() => import("./components/About"));
 
@@ -61,6 +63,23 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />,
+        errorElement: <ErrorContact />,
+        children: [
+          {
+            path: "/contact/p1",
+            element: <Person name={"p1"} />,
+          },
+          {
+            path: "/contact/p2",
+            element: <Person name={"p2"} />,
+          },
+          {
+            path: "*",
+            loader: () => {
+              throw new Error("broken!");
+            },
+          },
+        ],
       },
       {
         path: "/res/:resId",

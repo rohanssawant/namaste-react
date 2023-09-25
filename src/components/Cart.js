@@ -12,7 +12,7 @@ const Cart = () => {
     dispatch(clearCart());
   };
 
-  console.log(cartItems);
+  // console.log(cartItems);
   return (
     <div className="w-[50%] mx-auto p-[25px]">
       <div className="cart-container flex justify-between items-center mb-4">

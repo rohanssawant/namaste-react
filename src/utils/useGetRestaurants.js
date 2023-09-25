@@ -18,14 +18,14 @@ const useGetRestaurants = () => {
         cards[i]?.card?.card?.gridElements?.infoWithStyle &&
         cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants
       ) {
-        console.log(`[HOOKS] Found rest in ${i}th place`);
+        // console.log(`[HOOKS] Found rest in ${i}th place`);
         restaurants =
           cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         break;
       }
     }
 
-    console.log(`restaurants: ${JSON.stringify(restaurants)}`);
+    // console.log(`restaurants: ${JSON.stringify(restaurants)}`);
     setListOfRestaurant(restaurants);
   };
 

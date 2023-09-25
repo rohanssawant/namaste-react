@@ -3,7 +3,7 @@ import React from "react";
 const RestaurantHeader = ({ info }) => {
   const { name, cloudinaryImageId, cuisines, costForTwoMessage, avgRating } =
     info;
-  console.log(avgRating);
+  // console.log(avgRating);
   return (
     <div className="header-container flex justify-between items-center mb-4">
       <div className="info-container">

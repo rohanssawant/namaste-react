@@ -1,7 +1,7 @@
 import { useRouteError } from "react-router-dom";
 import Header from "./Header";
 const Error = ({ msg }) => {
-  console.log(msg);
+  // console.log(msg);
   const err = useRouteError();
   return (
     <div>

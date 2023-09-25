@@ -9,11 +9,11 @@ const Header = () => {
   const [btnName, setbtnName] = useState("Login");
   const onlineStatus = useOnlineStatus();
   const { loggedInUser } = useContext(UserContext);
-  console.log(useContext(UserContext));
+  // console.log(useContext(UserContext));
 
   // Subscribe to cart using Selector
   const cartItems = useSelector((store) => {
-    console.log(store);
+    // console.log(store);
     return store.cart.items;
   });
 

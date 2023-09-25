@@ -3,7 +3,7 @@ import { addItem } from "../store/cartSlice";
 import CDN_IMG_URL from "../utils/common";
 
 const RestaurantItemList = ({ food }) => {
-  // console.log(food);
+  // // console.log(food);
   const dispatch = useDispatch();
 
   const handleOnAddItem = (itemName) => {

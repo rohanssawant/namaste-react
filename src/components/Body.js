@@ -13,28 +13,28 @@ const Body = () => {
 
   // Higer order component
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
-  console.log(`RestaurantCardPromoted-----`);
-  console.log(RestaurantCardPromoted);
+  // console.log(`RestaurantCardPromoted-----`);
+  // console.log(RestaurantCardPromoted);
   const fetchData = async () => {
     const data = await fetch(API_URL);
     const jsonData = await data.json();
     let restaurants;
     const { cards } = jsonData?.data;
-    console.log(`fetch data called`);
+    // console.log(`fetch data called`);
     // Iterating through whole cards array to find restaurants
     for (let i = 0; i < cards.length; i++) {
       if (
         cards[i]?.card?.card?.gridElements?.infoWithStyle &&
         cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants
       ) {
-        console.log(`Found rest in ${i}th place`);
+        // console.log(`Found rest in ${i}th place`);
         restaurants =
           cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         break;
       }
     }
 
-    console.log(restaurants);
+    // console.log(restaurants);
     setListOfRestaurant(restaurants);
     setFilteredListOfData(restaurants);
   };
@@ -49,7 +49,7 @@ const Body = () => {
     return <Error msg={"Looks like you're offline!"} />;
 
   if (listOfRestaurants.length === 0) {
-    console.log(`body w shimmer`);
+    // console.log(`body w shimmer`);
     return (
       <div className="res-container grid grid-cols-4 gap-[2%] p-[2%]">
         {Array(10)
